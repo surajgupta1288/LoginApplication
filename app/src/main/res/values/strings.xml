@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Login Application</string>
+    <string name="tv_detail">Detail Recorder</string>
+    <string name="tv_name">Name :</string>
+    <string name="et_name_hint">  Enter Your Name </string>
+    <string name="tv_clg">College :</string>
+    <string name="et_clg_hint"> Enter Your College Name </string>
+    <string name="tv_regd">Regd :</string>
+    <string name="et_regd_hint"> Enter Your Regd No. </string>
+    <string name="tv_mail">Mail :</string>
+    <string name="et_mail_hint"> Enter Your Mail Id </string>
+    <string name="btn_submit">Submit</string>
+
+
+    <string name="tv_hey">Hey</string>
+    <string name="tv_your_details">Your Detail"'"s</string>
+    <string name="tv_your_name"> Your Name :</string>
+    <string name="tv_your_clg">Your College :</string>
+    <string name="tv_your_regd">Your Regd :</string>
+    <string name="tv_your_mail">Your Mail :</string>
+
+
+</resources>
