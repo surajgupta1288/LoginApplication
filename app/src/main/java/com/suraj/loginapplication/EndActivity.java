@@ -27,16 +27,18 @@ public class EndActivity extends AppCompatActivity {
         setContentView(R.layout.activity_end);
 
         Toolbar toolbar = findViewById(R.id.tl_end);
+        prefManager = getApplicationContext().getSharedPreferences("Register", MODE_PRIVATE);
+        editor = prefManager.edit();
         setSupportActionBar(toolbar);
         if(getSupportActionBar() != null)
         {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-            getSupportActionBar().setDisplayShowTitleEnabled(false);//for not showing the title.
+            //getSupportActionBar().setDisplayShowTitleEnabled(false);//for not showing the title.
 
-           // String userName = prefManager.getString("NAME", "");
+            String userName = prefManager.getString("NAME", "");
 
-         //   getSupportActionBar().setTitle(userName);
+          getSupportActionBar().setTitle(userName);
         }
 
 
@@ -47,8 +49,8 @@ public class EndActivity extends AppCompatActivity {
         Button btnLogout = findViewById(R.id.btn_logout);
 
 
-        prefManager = getApplicationContext().getSharedPreferences("Register", MODE_PRIVATE);
-        editor = prefManager.edit();
+      //  prefManager = getApplicationContext().getSharedPreferences("Register", MODE_PRIVATE);
+     //   editor = prefManager.edit();
 
         String userName = prefManager.getString("NAME", "");
         String userMail = prefManager.getString("MAIL", "");
